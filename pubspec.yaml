@@ -1,0 +1,60 @@
+name: rafiq_almanasik_app2
+description: "Rafiq Al Manasik App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  easy_localization: ^3.0.8
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # الأيقونات والخطوط
+  cupertino_icons: ^1.0.8
+
+  # حفظ الإعدادات واللغة والعدادات
+  shared_preferences: ^2.2.2
+
+  # النطق الصوتي (TTS)
+  flutter_tts: ^4.2.0
+
+  # فتح روابط خرائط جوجل
+  url_launcher: ^6.2.5
+
+  # الكاميرا واختيار الصور
+  image_picker: ^1.1.2
+
+  # قراءة النصوص من الصور (OCR)
+  google_mlkit_text_recognition: ^0.13.0
+
+  # الميكروفون والتحكم الصوتي
+  speech_to_text: ^7.0.0
+
+  # للاتصال بالإنترنت (لخدمة الترجمة)
+  http: ^1.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/translations/
